@@ -19,6 +19,10 @@ jobs:
 
       - name: npm run publish
         run: npm run publish
+      - name: npm run publish
+        run: |
+          cd dist/angular-layout-directives-lib
+          npm publish
 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
