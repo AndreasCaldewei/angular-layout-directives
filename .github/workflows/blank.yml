@@ -14,16 +14,13 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@andreascaldewei'
 
-      - name: install angular cli
-        run: npm install @angular/cli -g
-
-      - name: npm run publish
-        run: npm run publish
       - name: npm run publish
         run: |
-          cd dist/angular-layout-directives-lib
-          npm publish --access public
-
-
+          LATEST=`npm view . version`
+          CURRENT=`cd ./dist/angular-layout-directives-lib | cat package.json | jq -r .version`
+          if [ "$LATEST" != "$CURRENT" ]
+          then
+            npm run publish
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
