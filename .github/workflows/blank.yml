@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 10
           registry-url: https://npm.pkg.github.com
-          scope: '@AndreasCaldewei'
+          scope: '@andreascaldewei'
 
       - name: install angular cli
         run: npm install @angular/cli -g
