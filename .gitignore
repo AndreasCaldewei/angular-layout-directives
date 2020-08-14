@@ -44,3 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/projects/angular-layout-directives-lib/node_modules/
+/projects/angular-layout-directives-lib/package-lock.json
