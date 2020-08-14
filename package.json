@@ -7,7 +7,8 @@
     "build": "ng build angular-layout-directives-lib",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish": "npm install && npm run build && npm publish ./dist/angular-layout-directives-lib "
   },
   "private": true,
   "dependencies": {
