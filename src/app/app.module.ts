@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {AngularLayoutDirectivesLibModule} from "../../projects/angular-layout-directives-lib/src/lib/angular-layout-directives-lib.module";
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularLayoutDirectivesLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

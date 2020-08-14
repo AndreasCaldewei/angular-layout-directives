@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "angular-layout-directives-lib": {
+      "projectType": "library",
+      "root": "projects/angular-layout-directives-lib",
+      "sourceRoot": "projects/angular-layout-directives-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-layout-directives-lib/tsconfig.lib.json",
+            "project": "projects/angular-layout-directives-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-layout-directives-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-layout-directives-lib/src/test.ts",
+            "tsConfig": "projects/angular-layout-directives-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-layout-directives-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-layout-directives-lib/tsconfig.lib.json",
+              "projects/angular-layout-directives-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "angular-layout-directives"
 }

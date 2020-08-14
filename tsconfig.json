@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-layout-directives-lib": [
+        "dist/angular-layout-directives-lib/angular-layout-directives-lib",
+        "dist/angular-layout-directives-lib"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
