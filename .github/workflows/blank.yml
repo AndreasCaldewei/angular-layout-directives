@@ -15,6 +15,7 @@ jobs:
           scope: '@AndreasCaldewei'
 
       - name: npm run publish
+        run: npm install @angular/cli -g
         run: npm run publish
 
         env:
