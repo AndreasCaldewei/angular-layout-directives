@@ -5,6 +5,7 @@ import {SidebarDirective} from "./directives/sidebar.directive";
 import {PancakeDirective} from "./directives/pancake.directive";
 import {HolyGrailDirective} from "./directives/holy-grail.directive";
 import {GridCardsDirective} from "./directives/grid-cards.directive";
+import { LineUpDirective } from './directives/line-up.directive';
 
 
 
@@ -15,6 +16,7 @@ import {GridCardsDirective} from "./directives/grid-cards.directive";
     PancakeDirective,
     HolyGrailDirective,
     GridCardsDirective,
+    LineUpDirective,
   ],
   imports: [
   ],
